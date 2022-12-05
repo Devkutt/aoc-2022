@@ -26,9 +26,7 @@ for (let i = 0; i < stackCount; i++) {
     stacks.push(stack);
 }
 
-console.log(stacks)
 const parsedInstructions = operationLines.map(line => line.split(" ").filter(part => part != "move" && part != "from" && part != "to").map(it => parseInt(it)));
-console.log(parsedInstructions[0]);
 
 const doInstruction = (instruction) => {
     const start = instruction[1] - 1;
